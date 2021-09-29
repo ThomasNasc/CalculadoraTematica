@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 70px;
+}
+
+body {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    min-width: 300px;
+    max-width: 400px;
+    width: 50%;
+}
+
+div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.botao {
+    font-size: 32px;
+    font-family: 'Spartan', sans-serif;
+    border-style: none;
+    border-radius: 10px;
+    color: yellow;
+    background-color: #331B4D;
+    box-shadow: 0px 3px #861C9D;
+    width: 25%;
+    height: 50px;
+    padding: 0;
+    margin: 7px;
+    max-width: 75px;
+    min-width: 50px
+}
+
+section {
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background-color: #1E0836;
+}
+
+section .botaogrande {
+    width: calc(50% + 15px);
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 7px;
+}
+
+#reset {
+    border-style: none;
+    font-size: 15px;
+    margin-right: 5px;
+    margin-left: 10px;
+    font-family: 'Spartan', sans-serif;
+    color: white;
+    background-color: #56077C;
+    box-shadow: 0px 3px #861C9D;
+}
+
+#del {
+    font-size: 15px;
+    margin-left: 10px;
+    background-color: #56077C;
+    color: white;
+}
+
+#result {
+    font-size: 15px;
+    font-family: 'Spartan', sans-serif;
+    border-style: none;
+    margin-right: 10px;
+    margin-left: 5px;
+    background-color: #00DECF;
+    box-shadow: 0px 3px #3E6D83;
+}
+
+#resultado {
+    height: 60px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-style: none;
+    font-size: 32px;
+    font-family: 'Spartan', sans-serif;
+    text-align: end;
+    padding-right: 10px;
+    background-color: #1E0836;
+    color: yellow;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    margin: 3px;
+}
+
+#menu {
+    display: flex;
+    justify-content: unset;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+header,
+body {
+    background-color: #170629;
+}
+
+#menu #test[type=range] {
+    all: unset;
+    -webkit-appearance: none;
+    background-color: #2a1244;
+    width: 50px;
+    border-radius: 50px;
+    height: 15px;
+    padding: 3px;
+    position: fixed;
+    top: 30px;
+    right: 0px;
+}
+
+#calc {
+    color: yellow;
+    font-family: 'Spartan', sans-serif;
+    font-size: 25px;
+    position: fixed;
+    left: 10px;
+    top: 20px;
+}
+
+P {
+    font-family: 'Spartan', sans-serif;
+    font-size: 10px;
+}
+
+#NUMEROS {
+    width: 50PX;
+    justify-content: space-around;
+    position: fixed;
+    top: 12px;
+    right: 0px;
+    color: yellow;
+}
+
+#theme {
+    color: yellow;
+    font-size: 10px;
+    font-family: 'Spartan', sans-serif;
+    position: fixed;
+    right: 65px;
+    top: 35px;
+}
+
+#menu #test[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #D13D34;
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+}
+
+#menu #test[type=range]::-moz-range-thumb {
+    -webkit-appearance: none;
+    background-color: #D13D34;
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+}

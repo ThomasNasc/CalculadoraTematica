@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+
+<body id="body">
+    <header id="header">
+        <h1 id="calc">calc</h1>
+        <div id="menu">
+            <h2 id="theme">THEME
+            </h2>
+            <div ID="NUMEROS">
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+            </div>
+            <input type="range" onchange="test(value)" id="test" min="1" max="3" step="1">
+
+
+        </div>
+    </header>
+
+    <form name="calc">
+        <input type="text" name="resultado" id="resultado">
+    </form>
+    <section id="section1">
+        <div>
+            <button class="botao" id="botao7" value="7" onclick="insert('7')">7</button>
+            <button class="botao" id="botao8" onclick="insert('8')" value="8">8</button>
+            <button class="botao" id="botao9" onclick="insert('9')" value="9">9</button>
+            <button class="botao" id="del" onclick="back()">DEL</button>
+
+        </div>
+        <div>
+            <BUtton class="botao" id="botao4" onclick="insert('4')">4</BUtton>
+            <BUtton class="botao" id="botao5" onclick="insert('5')">5</BUtton>
+            <BUtton class="botao" id="botao6" onclick="insert('6')">6</BUtton>
+            <BUtton class="botao" id="botaosom" value="+" onclick="insert('+')">+</BUtton>
+        </div>
+        <div>
+            <BUtton class="botao" id="botao1" onclick="insert('1')">1</BUtton>
+            <BUtton class="botao" id="botao2" onclick="insert('2')">2</BUtton>
+            <BUtton class="botao" id="botao3" onclick="insert('3')">3</BUtton>
+            <BUtton class="botao" id="botaomen" value="-" onclick="insert('-')">-</BUtton>
+        </div>
+        <div>
+            <button class="botao" id="botaodot" onclick="insert('.')">.</button>
+            <button class="botao" id="botao0" onclick="insert('0')">0</button>
+            <button class="botao" id="botaodiv" value="/" onclick="insert('/')">/</button>
+            <button class="botao" id="botaomult" value="*" onclick="insert('*')">x</button>
+        </div>
+        <div>
+            <button class="botaogrande" id="reset" onclick="clean()">RESET</button>
+            <button class="botaogrande" id="result" onclick="result()">=</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
